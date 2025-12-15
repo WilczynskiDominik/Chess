@@ -1,8 +1,9 @@
-package game;
+package com.chessGame;
 
+import javax.swing.*;
 import java.awt.*;
 
-public class Square {
+public class Square extends JPanel {
     private final String NAME;
     private final int SIZE;
     private final Color COLOR;
@@ -11,5 +12,7 @@ public class Square {
         this.NAME = name;
         this.SIZE = size;
         this.COLOR = color;
+        setSize(SIZE, SIZE);
+        setBackground(COLOR);
     }
 }
